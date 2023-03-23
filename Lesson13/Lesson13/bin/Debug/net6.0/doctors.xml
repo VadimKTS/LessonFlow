@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfDoctor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Doctor>
+    <CountOfPatient>15</CountOfPatient>
+    <Счетчик>582</Счетчик>
+    <Specialization>Хирург</Specialization>
+  </Doctor>
+  <Doctor>
+    <CountOfPatient>100</CountOfPatient>
+    <Счетчик>246</Счетчик>
+    <Specialization>Терапевт</Specialization>
+  </Doctor>
+</ArrayOfDoctor>

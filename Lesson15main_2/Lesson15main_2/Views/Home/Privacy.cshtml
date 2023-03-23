@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+@model string[]
+<h1>@ViewData["Title"]</h1>
+
+<p>Hello all. This is Privacy</p>
+<h1>Hello. I am h1</h1>
+
+@*<div>@ViewData["Message"]</div>
+<div>@ViewData["Number"]</div>
+<div>@ViewData["Vadik"]</div>*@
+
+@*<div>@ViewBag.MessageSecond</div>
+<div>@ViewBag.Names.Length</div>
+@foreach (string name in ViewBag.Names)
+{
+    <div>@name</div>
+}*@
+
+@foreach (var item in Model)
+{
+    <div>@item</div>
+}
+

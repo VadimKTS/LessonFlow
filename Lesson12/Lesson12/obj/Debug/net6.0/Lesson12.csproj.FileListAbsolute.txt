@@ -1,0 +1,15 @@
+D:\Git repositories\LessonFlow\Lesson12\Lesson12\bin\Debug\net6.0\Lesson12.exe
+D:\Git repositories\LessonFlow\Lesson12\Lesson12\bin\Debug\net6.0\Lesson12.deps.json
+D:\Git repositories\LessonFlow\Lesson12\Lesson12\bin\Debug\net6.0\Lesson12.runtimeconfig.json
+D:\Git repositories\LessonFlow\Lesson12\Lesson12\bin\Debug\net6.0\Lesson12.dll
+D:\Git repositories\LessonFlow\Lesson12\Lesson12\bin\Debug\net6.0\Lesson12.pdb
+D:\Git repositories\LessonFlow\Lesson12\Lesson12\obj\Debug\net6.0\Lesson12.csproj.AssemblyReference.cache
+D:\Git repositories\LessonFlow\Lesson12\Lesson12\obj\Debug\net6.0\Lesson12.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git repositories\LessonFlow\Lesson12\Lesson12\obj\Debug\net6.0\Lesson12.AssemblyInfoInputs.cache
+D:\Git repositories\LessonFlow\Lesson12\Lesson12\obj\Debug\net6.0\Lesson12.AssemblyInfo.cs
+D:\Git repositories\LessonFlow\Lesson12\Lesson12\obj\Debug\net6.0\Lesson12.csproj.CoreCompileInputs.cache
+D:\Git repositories\LessonFlow\Lesson12\Lesson12\obj\Debug\net6.0\Lesson12.dll
+D:\Git repositories\LessonFlow\Lesson12\Lesson12\obj\Debug\net6.0\refint\Lesson12.dll
+D:\Git repositories\LessonFlow\Lesson12\Lesson12\obj\Debug\net6.0\Lesson12.pdb
+D:\Git repositories\LessonFlow\Lesson12\Lesson12\obj\Debug\net6.0\Lesson12.genruntimeconfig.cache
+D:\Git repositories\LessonFlow\Lesson12\Lesson12\obj\Debug\net6.0\ref\Lesson12.dll

@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@functions
+{
+    public double Multiply(int a, int b, int c, int d)
+    {
+        return a * b * c * d;
+    }
+}
+
+
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Home/Index</h1>
+
+    <p>Умножение 1*2*3*4 = @Multiply(1,2,3,4)</p>
+
+
+    @*@{
+        var f = 123;
+        var num = 17;
+
+        <div>@f + @num =</div>
+    }
+    @(
+        f + num
+        )
+
+    @{
+        string[] brand = { "Audi", "BMW", "Mercedes-Benz"};
+    }
+    <ul>
+    @for (int i = 0; i < brand.Length; i++)
+    {
+        <li>@brand[i]</li>
+    }
+    </ul>*@
+
+    @*<ol>
+    @foreach (var item in brand)
+    {
+            <li>@item</li>
+        }
+    </ol>*@
+
+
+
+
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
