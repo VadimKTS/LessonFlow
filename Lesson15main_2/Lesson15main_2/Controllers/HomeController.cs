@@ -56,18 +56,18 @@ namespace Lesson15main_2.Controllers
         {
             return $"User Name: {username}      Password: {password}        Age: {age}      Info: {info}";
         }
-        //--------------------------------- Lesson 16 HomeWork Task 1 ----------------------------------------------
+        //---------------------------------  Lesson 16 HomeWork Task 1  ----------------------------------------------
 
-        [HttpGet]
-        public IActionResult Login() => View();
+         [HttpGet]
+         public IActionResult Login() => View();
 
-        [HttpPost]
-        public IActionResult Login(string username, string password)
-        {
-            if (username == "Vadik" && password == "qwerty") { return Redirect("~/Home/Index"); }
-            else { return NotFound("Неверный логин или пароль!!!\nHTTP ERROR 404"); }
-        }
-        //-----------------------------------------------------------------------------------------------------------
+         [HttpPost]
+         public IActionResult Login(string username, string password)
+         {
+             if (username == "Vadik" && password == "qwerty") { return Redirect("~/Home/Index"); }
+             else { return NotFound("Неверный логин или пароль!!!\nHTTP ERROR 404"); }
+         }
+        // -----------------------------------------------------------------------------------------------------------
         //public IActionResult GetMessage()
         //{
         //    return PartialView("_GetMessage");
