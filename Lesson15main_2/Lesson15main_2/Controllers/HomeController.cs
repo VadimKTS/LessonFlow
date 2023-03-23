@@ -68,6 +68,10 @@ namespace Lesson15main_2.Controllers
             else { return NotFound("Неверный логин или пароль!!!\nHTTP ERROR 404"); }
         }
         //-----------------------------------------------------------------------------------------------------------
+        //public IActionResult GetMessage()
+        //{
+        //    return PartialView("_GetMessage");
+        //}
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
