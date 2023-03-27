@@ -10,41 +10,80 @@ namespace Lesson15main_2.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
+		GoodsViewModel[] goods;
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
+
+            goods = new GoodsViewModel[]
+            {
+                new GoodsViewModel ( 1, "qwe", 2, "Bel", "Prom" ),
+                new GoodsViewModel( 2, "qwer", 5, "Bel", "Prom" ),
+                new GoodsViewModel( 3, "qwert", 89, "Bel", "Prom" )
+            };
         }
 
-        public IActionResult Index()
+		public IActionResult Index()
         {
             return View();
         }
 
+		[HttpGet]
+		public IActionResult Form2() => View();
+
+
+		[HttpPost]
+		public string Form2( PersonViewModel person )
+		{
+            if (ModelState.IsValid)
+            {
+                if (person.Password.Equals(person.ConfirmPassword))
+                {
+                    return $"User Name: {person.UserName}      Password: {person.Password}        Confirm Password: {person.ConfirmPassword}      Adress: {person.Adress}";
+                }
+                else 
+                {
+                    return "Пароли несовпадают";
+                }
+            }
+            else
+            {
+                return "Ошибка ввода данных";
+            }
+			
+		}
+		public IActionResult Goods()
+        {
+            return View( goods );
+        }
+
         public IActionResult Privacy()
         {
-            //var httpContext = ControllerContext.HttpContext;
-            //var _httpContextOne = HttpContext.Request;
+			//return View();
+			//var httpContext = ControllerContext.HttpContext;
+			//var _httpContextOne = HttpContext.Request;
 
-            //ViewData["Vadik"] = true;
-            //ViewData["Message"] = "Hello! It is ViewData-message";
-            //ViewData["Number"] = 15;
+			//ViewData["Vadik"] = true;
+			//ViewData["Message"] = "Hello! It is ViewData-message";
+			//ViewData["Number"] = 15;
 
-            //ViewBag.MessageSecond = "Hello! It is ViewData-message";
-            //ViewBag.Names = new string[] { "Simba", "Pumba", "Timon" };
-            //var tom = new Person("Vadik", 197);
+			//ViewBag.MessageSecond = "Hello! It is ViewData-message";
+			//ViewBag.Names = new string[] { "Simba", "Pumba", "Timon" };
+			//var tom = new Person("Vadik", 197);
 
-            var cars = new string[] { "Audi", "BMW", "Mercedes-Benz" };
+			var cars = new string[] { "Audi", "BMW", "Mercedes-Benz" };
+			return View(cars);
 
-            //return Json(tom);
-            //return Content("Hello)))");
-            return View("Privacy", cars);
+			//return Json(tom);
+			//return Content("Hello)))");
 
-            //return Redirect("~/Profile/Privacy");
-            //return StatusCode(402);
-            //return NotFound();
-            //return Unauthorized();
-            //return BadRequest("Bad");
-        }
+
+			//return Redirect("~/Profile/Privacy");
+			//return StatusCode(402);
+			//return NotFound();
+			//return Unauthorized();
+			//return BadRequest("Bad");
+		}
 
         [HttpGet]
         public IActionResult Form() => View();

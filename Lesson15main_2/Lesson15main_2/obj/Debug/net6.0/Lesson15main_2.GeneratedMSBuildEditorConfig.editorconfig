@@ -20,6 +20,14 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Git repositories/LessonFlow/Lesson15main_2/Lesson15main_2/Views/Home/Form2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGb3JtMi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git repositories/LessonFlow/Lesson15main_2/Lesson15main_2/Views/Home/Goods.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHb29kcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Git repositories/LessonFlow/Lesson15main_2/Lesson15main_2/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -34,6 +42,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Git repositories/LessonFlow/Lesson15main_2/Lesson15main_2/Views/Home/_GetMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfR2V0TWVzc2FnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git repositories/LessonFlow/Lesson15main_2/Lesson15main_2/Views/Inventory/Authorization.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5XEF1dGhvcml6YXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git repositories/LessonFlow/Lesson15main_2/Lesson15main_2/Views/Inventory/Inventory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5XEludmVudG9yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git repositories/LessonFlow/Lesson15main_2/Lesson15main_2/Views/Inventory/Registration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5XFJlZ2lzdHJhdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Git repositories/LessonFlow/Lesson15main_2/Lesson15main_2/Views/Profile/Index.cshtml]

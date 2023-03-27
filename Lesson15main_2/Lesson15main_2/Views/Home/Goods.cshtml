@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Goods Page";
+}
+
+@model GoodsViewModel[]
+
+
+<div>
+    <h1>Goods</h1>
+
+	<p>
+		<table class="table">
+			<tr>
+				<td>Id</td>
+				<td>Name</td>
+				<td>Count</td>
+				<td>Country</td>
+				<td>Category</td>
+			</tr>
+
+			@foreach (var p in Model)
+			{
+				<tr>
+					<td>@p.Id</td>
+					<td>@p.Name</td>
+					<td>@p.Count</td>
+					<td>@p.Country</td>
+					<td>@p.Category</td>
+				</tr>
+			}
+			
+		</table>
+	</p>
+	
+
+
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>

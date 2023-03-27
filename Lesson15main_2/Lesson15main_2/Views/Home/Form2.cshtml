@@ -1,0 +1,26 @@
+﻿@model PersonViewModel
+<h2>User Form2</h2>
+@using (Html.BeginForm("Form2", "Home", FormMethod.Post))
+{
+	<p>
+		@Html.LabelFor(m=>m.UserName, "User Name")<br />
+		@Html.TextBoxFor(m=>m.UserName," ", new { type = "text"})
+	</p>
+
+	<p>
+		@Html.LabelFor(m=>m.Password, "Password")<br />
+		@Html.PasswordFor(m=>m.Password," ")
+	</p>
+
+	<p>
+		@Html.LabelFor(m=>m.ConfirmPassword, "Confirm Password")<br />
+		@Html.PasswordFor(m=>m.ConfirmPassword," ")
+	</p>
+
+	<p>
+		@Html.LabelFor(m=>m.Adress, "Adress")<br />
+		@Html.TextBoxFor(m=>m.Adress," ", new { type = "text"})
+	</p>
+	
+		<input type="submit" name="Send" />
+}
