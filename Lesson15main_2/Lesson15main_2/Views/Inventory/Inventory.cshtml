@@ -1,51 +1,51 @@
-﻿@{
-    ViewData["Title"] = "Goods Inventory Page";
-}
+﻿	@{
+		ViewData["Title"] = "Goods Inventory Page";
+	}
 
-@model GoodsInventoryModel[]
+	@model GoodsInventoryModel[]
 
 
-<div>
-	<h1>Goods Inventory</h1>
+	<div>
+		<h1>Goods Inventory</h1>
 
-	<p>
-		<table class="table">
-			<tr>
-				<td>Id</td>
-				<td>Name</td>
-				<td>QuantityIsInStock</td>
-				<td>QuantityActuallyInStock</td>
-				<td>CompareBalances</td>
-			</tr>
-
-			@foreach (var p in Model)
-			{
+		<p>
+			<table class="table">
 				<tr>
-					<td>@p.Id</td>
-					<td>@p.Name</td>
-					<td>@p.QuantityIsInStock</td>
-					
-					@if (p.CompareBalances==0)
-					{
-						<td style="color:aquamarine">@p.QuantityActuallyInStock</td>
-						<td style="color:green">OK</td>
-					}
-					else if (p.CompareBalances > 0)
-					{
-						<td style="color:aquamarine">@p.QuantityActuallyInStock</td>
-						<td>Overage</td>
-					}
-					else
-					{
-						<td style="color:red">@p.QuantityActuallyInStock</td>
-						<td style="color:red">Shortage</td>
-					}
-					
+					<td>Id</td>
+					<td>Name</td>
+					<td>QuantityIsInStock</td>
+					<td>QuantityActuallyInStock</td>
+					<td>CompareBalances</td>
 				</tr>
-			}
-			
-		</table>
-	</p>
 
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+				@foreach (var p in Model)
+				{
+					<tr>
+						<td>@p.Id</td>
+						<td>@p.Name</td>
+						<td>@p.QuantityIsInStock</td>
+					
+						@if (p.CompareBalances==0)
+						{
+							<td style="color:aquamarine">@p.QuantityActuallyInStock</td>
+							<td style="color:green">OK</td>
+						}
+						else if (p.CompareBalances > 0)
+						{
+							<td style="color:aquamarine">@p.QuantityActuallyInStock</td>
+							<td>Overage</td>
+						}
+						else
+						{
+							<td style="color:red">@p.QuantityActuallyInStock</td>
+							<td style="color:red">Shortage</td>
+						}
+					
+					</tr>
+				}
+			
+			</table>
+		</p>
+
+		<p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+	</div>

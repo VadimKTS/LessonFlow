@@ -3,38 +3,38 @@ using Lesson15main_2.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace Lesson15main_2.Controllers
-{
-	public class InventoryController : Controller
+	namespace Lesson15main_2.Controllers
 	{
-		private readonly ILogger<HomeController> _logger;
-
-
-		GoodsInventoryModel[] goodsInventory;
-		public InventoryController(ILogger<HomeController> logger)
+		public class InventoryController : Controller
 		{
-			_logger = logger;
+			private readonly ILogger<HomeController> _logger;
 
-			goodsInventory = new GoodsInventoryModel[]
+
+			GoodsInventoryModel[] goodsInventory;
+			public InventoryController(ILogger<HomeController> logger)
 			{
-				new GoodsInventoryModel ( 1, "Milk", 100, 100 ),
-				new GoodsInventoryModel( 2, "Potato", 500, 550 ),
-				new GoodsInventoryModel( 3, "Meat", 67, 60 )
-			};
+				_logger = logger;
+
+				goodsInventory = new GoodsInventoryModel[]
+				{
+					new GoodsInventoryModel ( 1, "Milk", 100, 100 ),
+					new GoodsInventoryModel( 2, "Potato", 500, 550 ),
+					new GoodsInventoryModel( 3, "Meat", 67, 60 )
+				};
+			}
+
+			public IActionResult Inventory() => View(goodsInventory);
+
+			[HttpGet]
+			public IActionResult Authorization() => View();
+
+			[HttpPost]
+			public IActionResult Authorization(string userName, string password)
+			{
+				if (userName.Equals("admin") && password.Equals("admin")) { return Redirect("~/Inventory/Inventory"); }
+				else { return Redirect("~/Inventory/Registration"); }
+			}
+
+			public IActionResult Registration() => View();
 		}
-
-		public IActionResult Inventory() => View( goodsInventory );
-		 
-		[HttpGet]
-		public IActionResult Authorization() => View();
-
-		[HttpPost]
-		public IActionResult Authorization(string userName, string password)
-        {
-            if ( userName.Equals("admin") && password.Equals("admin")) { return Redirect("~/Inventory/Inventory"); }
-			else { return Redirect("~/Inventory/Registration"); }
-        }
-
-		public IActionResult Registration() => View();
-    }
-}
+	}
