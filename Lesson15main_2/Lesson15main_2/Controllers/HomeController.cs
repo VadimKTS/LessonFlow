@@ -103,7 +103,7 @@ namespace Lesson15main_2.Controllers
          [HttpPost]
          public IActionResult Login(string username, string password)
          {
-             if (username == "Vadik" && password == "qwerty") { return Redirect("~/Home/Index"); }
+             if (username.Equals("Vadik") && password.Equals("qwerty")) { return Redirect("~/Home/Index"); }
              else { return NotFound("Неверный логин или пароль!!!\nHTTP ERROR 404"); }
          }
         // -----------------------------------------------------------------------------------------------------------
