@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Git repositories\LessonFlow\Lesson15main_2\Lesson15main_2
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Git repositories/LessonFlow/Lesson15main_2/Lesson15main_2/Views/Home/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git repositories/LessonFlow/Lesson15main_2/Lesson15main_2/Views/Home/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Git repositories/LessonFlow/Lesson15main_2/Lesson15main_2/Views/Home/Form.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
